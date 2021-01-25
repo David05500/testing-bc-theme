@@ -8,6 +8,7 @@
 //
 // -----------------------------------------------------------------------------
 
+
 .tab {
     border-top: $tab-active-border;
     float: none;
@@ -67,7 +68,10 @@
 
         // scss-lint:disable NestingDepth
         &.is-active {
-            height: auto;
+            height: 26rem;
+            @include breakpoint("medium") {
+                height: auto;
+            }
             overflow: visible;
             padding: $tabs-content-padding;
             visibility: visible;

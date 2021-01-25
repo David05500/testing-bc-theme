@@ -57,11 +57,12 @@
 
 .form-wishlist {
     position: relative;
+
 }
 
 .dropdown-menu-button {
     width: 100%;
-
+    font-family: 'GT PRESSURA BOLD' !important;
     &.is-open {
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
@@ -70,6 +71,10 @@
     .icon {
         float: right;
         margin-left: 10px;
+        // height: remCalc(20px) !important; 
+        // @include breakpoint("medium") {
+        //     height: 10% !important;
+        // }
     }
 
     &:focus {

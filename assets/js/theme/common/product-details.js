@@ -179,7 +179,7 @@ export default class ProductDetails {
         });
 
         let productVariant = unsatisfiedRequiredFields.length === 0 ? options.sort().join(', ') : 'unsatisfied';
-        const view = $('.productView');
+        const view = $('.productViewCustom');
 
         if (productVariant) {
             productVariant = productVariant === 'unsatisfied' ? '' : productVariant;

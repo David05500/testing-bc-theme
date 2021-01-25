@@ -42,6 +42,25 @@
                     <li>
                         <a href="{{urls.sitemap}}">{{lang 'sitemap.page_title'}}</a>
                     </li>
+                            
+                    <li>
+                        <a href="https://kindtobee.com/shipping-handling/" aria-label="Shipping &amp; Handling">
+                            Shipping &amp; Handling
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://kindtobee.com/contact-us/" aria-label="Contact Us">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://kindtobee.com/privacy/" aria-label="Privacy">
+                            Privacy
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="event.stopPropagation(); window.consentManager.openConsentManager();">Privacy Preferences</a>
+                    </li>
                 </ul>
             </article>
 
@@ -99,7 +118,6 @@
         {{/if}}
         {{#if theme_settings.show_powered_by}}
             <div class="footer-copyright">
-                <p class="powered-by">{{lang 'footer.powered_by'}} <a href="https://www.bigcommerce.com?utm_source=merchant&amp;utm_medium=poweredbyBC" rel="nofollow">BigCommerce</a></p>
             </div>
         {{/if}}
         {{#if theme_settings.show_copyright_footer}}

@@ -28,7 +28,7 @@
 .paymentMethod {
     border: container("border");
     background-color: #e5e5e5;
-    border-radius: remCalc(3px);
+    // border-radius: remCalc(3px);
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -162,7 +162,7 @@
             display: flex;
 
             &:first-child .form-field {
-                margin-bottom: spacing("half");
+                // margin-bottom: spacing("half");
             }
         }
     }

@@ -1,0 +1,695 @@
+.productView-thumbnails {
+    display: none !important;
+}
+.sd-button-081726b1-a2d6-4342-a581-ea42d8ce7067 {
+    justify-content: center !important;
+    @include breakpoint("medium") {
+        justify-content: flex-end !important;
+    }
+    div {
+        margin: 0 !important;
+        @include breakpoint("medium") {
+            margin-right: 40px !important;
+        }
+    }
+}
+#sd-simple-text-editable-ee980e73-f549-4dbe-a5bb-98e2b5410eb6 {
+    max-width: 25rem !important;
+    text-align: justify !important;
+    font-size: 15px !important;
+    color: #1e2023 !important;
+    @include breakpoint("medium") {
+        font-size: 17px !important;
+        text-align: right !important;
+    }
+}
+.sd-simple-text-24803c7c-1ec3-4ad3-81ae-0aa87bcf9bd8 {
+    margin-left: 20px !important; 
+    margin-right: 20px !important;
+    text-align: center !important;
+    @include breakpoint("medium") {
+        margin-left: 0px !important; 
+        margin-right: 40px !important;
+        text-align: right !important;
+    }
+}
+#sd-simple-text-editable-24803c7c-1ec3-4ad3-81ae-0aa87bcf9bd8 {
+    font-family: 'GT Pressura Bold' !important;
+    font-size: 30px !important;
+    @include breakpoint("medium") {
+        font-size: 36px !important;
+    }
+}
+.go3949826399 {
+    align-items: center !important;
+    padding: 21px 0px 42px 0px !important;
+    @include breakpoint("medium") {
+        align-items: flex-end !important;
+        padding: 21px 21px 42px 21px !important;
+    }
+}
+.go1205309166 {
+    font-size: 27px !important;
+    font-family: 'GT Pressura Bold' !important;
+    @include breakpoint("medium"){
+        font-size: 32px !important;
+    }
+}
+.go1981112276 {
+    p {
+        margin:0 !important; 
+        display:inline !important;
+        @include breakpoint("medium") { 
+            display:block !important;
+        }
+    }
+    font-size: 17px !important;
+    margin-right: 2rem!important;
+    margin-left: 2rem!important;
+    color: #1e2023!important;
+    @include breakpoint("medium") {
+        margin-left: 0rem!important;
+        margin-right: 0rem!important;
+        margin-top: 2rem !important; 
+        margin-bottom: 2rem !important;
+    }
+}
+.go1304574217 {
+    text-align: center !important;
+
+    @include breakpoint("medium") {
+        text-align: right !important;
+    }
+}
+.content-editable-b104fa8ffe-4f70-4085-8881-fcf4d2161aa1-title {
+    font-size: 27px !important;
+}
+#sd-simple-text-editable-724fe474-7ed0-4a06-892d-5b921ce7d1a4 {
+    text-align: center !important;
+    margin-top: 1rem !important;
+    margin-right: 2rem !important;
+    margin-left: 2rem !important;
+    color: #1e2023 !important;
+}
+#consent-manager-update-banner { display: none; }
+.TopMenu li:nth-of-type(5) > div {
+    visibility: hidden;
+}
+.TopMenu a[href="http://www.jasocorp.com/login.php"] {
+    visibility: visible;
+}
+.TopMenu a[href="http://www.jasocorp.com/login.php?action=create_account"] {
+    display: none;
+}
+.page {
+    margin: auto;
+}
+
+.checkoutLOGO {
+    width: 5rem !important;
+}
+.checkoutHeader-logo {
+    width: 5rem !important;
+}
+
+.onlyMobile {
+    display: block;
+        
+    @include breakpoint("medium") {
+        display: none;
+    }  
+}
+.dropdown-menu {
+    @include breakpoint("medium") {
+        max-width: unset !important;
+    }  
+}
+.navUser {
+    @include breakpoint("medium") {
+        position: absolute !important;
+    }  
+}
+.navPages {
+    box-shadow: 0px 4px 14px -10px grey !important;
+    height: unset !important;
+    @include breakpoint("medium") {
+        box-shadow: unset !important;
+    }
+}
+
+.hide-header-wrapper {
+    .nav-wrapper {
+        display: none;
+    }
+    .productViewCustom {
+        margin-bottom: 0 !important;
+    }
+}
+.nav-wrapper {
+    @include breakpoint("medium") {
+        position: relative !important;
+    }  
+}
+.navUser-section {
+    width: 6rem;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    @include breakpoint("medium") {
+        padding-right: 0rem;
+        width: 25rem !important;
+        justify-content: flex-end !important;
+    }  
+}
+.navUser-action {
+    padding: 1rem !important;
+
+    @include breakpoint("medium") {
+        padding: 1rem 0.78571rem !important;
+    }  
+}
+.navUser-action--quickSearch, .navUser-action--Cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.nav-iconCart {
+    height: 1.3rem;
+    width: 1.3rem;
+    stroke-width: 0.1rem;
+}
+.nav-iconSearch {
+    stroke-width: 0px;
+    height: 1.1rem;
+    width: 1.1rem;
+}
+.carouselText {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    @include breakpoint("medium") {
+        position: unset;
+    }  
+}
+.navPages-container {
+    @include breakpoint("medium") {
+        margin-right: 7rem;
+        z-index: 99999;
+    }  
+}
+.header-inner {
+    @include breakpoint("medium") {
+        padding: 0;
+    }
+}
+.lableTags {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    justify-content: center;
+    
+    @include breakpoint("medium") {
+        justify-content: space-around;
+        padding-bottom: 4rem;
+    }
+    div {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+        @include breakpoint("medium") {
+            width: auto;
+            margin-bottom: 0rem;
+
+        }
+    }
+    img {
+     height: 110px;
+    }
+}
+.productViewCustom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 4rem;
+    
+    @include breakpoint("medium") {
+        flex-direction: row;
+    }
+
+
+    .form-field {
+        margin: 1rem 0rem;
+        justify-content: center;
+
+        @include breakpoint("medium") {
+            justify-content: unset;
+
+        }   
+    }
+
+    .quantityLabel {
+        display: none;
+        
+        @include breakpoint("medium") {
+            display: block;
+        }   
+    } 
+}
+.productNav {
+    position: unset;
+    width: 100%;
+    @include breakpoint("medium") {
+        position: absolute !important;
+    }
+}
+
+.productImages {
+    background-color: #f2f2f2;
+        
+    @include breakpoint("medium") {
+        width: 50%;
+    }
+}
+
+.productTitle {
+    font-family: 'GT Pressura Bold' !important;
+    position: absolute;
+    width: 100%;
+    top: 5rem;
+    @include breakpoint("medium") {
+    }
+    .price--withTax {
+        font-size: 17px !important;
+        font-weight: 100;
+    }
+}
+
+
+.heroCarousel-description {
+    font-size: 14px !important;
+    margin-top: 0.3rem !important;
+    margin-bottom: 0.3rem !important;
+    color: #1e2023 !important;
+}
+#sd-simple-text-editable-74c022b6-a512-4b69-b98f-a2ee92aa30d7 {
+    font-family: 'GT Pressura Bold' !important;
+    font-size: 27px!important;
+    padding-right: 1.2rem !important;
+    padding-left: 1.2rem !important;
+}
+.go2000111066:after {
+    background-attachment: unset !important;
+    @include breakpoint("medium") {
+        background-attachment: fixed !important;
+    }
+}
+
+
+.go149055422:after {
+    background-position: 6% 67% !important;
+}
+
+.previewCart {
+    .productView-image {
+        padding: 0;
+    }
+    .productView-details {
+        margin-top: 2rem;
+    }
+}
+
+.css-184epwz, .go3135553855 {
+    font-family: 'GT Pressura Bold' !important;
+    text-transform: uppercase;
+    background: none !important;
+    border: 2px solid black !important;
+    color: black !important;
+    padding: 0.3rem 0.7rem !important;
+    font-size: 12px !important;
+    @include breakpoint("medium"){
+        font-size: 14px !important;
+    }
+}
+.css-184epwz:hover {
+    background: black !important;
+    color: white !important;
+}
+.go3135553855:hover {
+    font-family: 'GT Pressura Bold' !important;
+    background: black !important;
+    color: white !important;
+}
+#buttonLink {
+    font-family: 'GT Pressura Bold' !important;
+}
+.productInformation {
+            
+    @include breakpoint("medium") {
+        width: 50%;
+    }
+}
+.slick-next {
+    display: none !important;
+    @include breakpoint("medium") {
+        display: inline-block;
+    }
+}
+.slick-prev {
+    display: none !important;
+    @include breakpoint("medium") {
+        display: inline-block;
+    }
+}
+.productCarousel {
+    margin: 0;
+    width: 1px !important;
+    @include breakpoint("medium") {
+        margin: unset;
+        width: auto;
+    }
+}
+.heroCarousel {
+    .slick-track {
+        width: 100% !important;
+    }
+}
+.heroCarousel-action {
+    font-family: 'GT Pressura Bold' !important;
+    margin-top: 0.6rem !important;
+}
+.heroCarousel-title {
+    font-family: 'GT Pressura Bold' !important;
+    font-size: 25px !important;
+    @include breakpoint("medium"){
+        font-size: 38px !important;
+    }
+}
+.js-hero-slide {
+    width: 100% !important;
+}
+.slick-track{
+    height:  fit-content;
+    @include breakpoint("medium") {
+        height: unset;
+    }
+}
+.slick-dots {
+    bottom: -77px !important;
+    padding: 0 !important;
+    @include breakpoint("medium") {
+        bottom: -60px !important;
+        padding: unset;
+    }
+}
+
+.cartButtonUpdateQuantity {
+    padding: 0.3rem 0.8rem !important;
+    @include breakpoint("medium") {
+        padding: unset;
+    }
+}
+
+.customOverflow {
+    // margin: 0 3rem;
+    margin-left: 3rem;
+    // overflow-y: auto;
+    // overflow-x: hidden;
+    // height: 17rem;
+}
+
+.tab-content { 
+    padding: 1.5rem 2rem;     
+    height: auto !important;
+    overflow-y: unset !important;
+    ul {
+        padding-left: 2rem;
+    }    
+    @include breakpoint("medium") {
+        height: 23rem !important;
+        overflow-y: scroll !important;
+    }   
+}
+.tab-title {
+    font-weight: 100 !important;
+    font-family: 'GT Pressura Regular' !important;
+}
+.button { 
+    font-family: 'GT Pressura Bold' !important;
+}
+.product-page-title {
+    font-family: 'GT Pressura Bold' !important;
+}
+.nutriIngridientsTab {
+    display: flex !important;
+    flex-direction: column !important;
+    ul {
+        color: #1e2023!important;
+        font-weight: 100 !important;
+        font-family: 'GT Pressura Regular' !important;
+        font-size: 14px !important;
+        padding-left: 1.3rem !important;
+    }
+    @include breakpoint("medium") {
+        flex-direction: row !important;
+    }
+}
+.nutrientsSubTitle {
+    font-size: 14px !important;
+    margin-bottom: 0.5rem !important;
+    font-weight: 100 !important;
+}
+.nutriIngridients {
+    width: 100% !important;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+    @include breakpoint("medium") {
+        width: 50% !important;
+    }
+}
+.nutrientsTitle {
+    margin-top: 1rem !important;
+    @include breakpoint("medium") {
+        margin-top: 0rem !important;
+    } 
+}
+.ingidientsTitle, .nutrientsTitle {
+    font-family: 'GT Pressura Bold' !important;
+    font-size: 18px !important;
+}
+.nutrientsTitle, .ingidientsTitle {
+    margin-bottom: 1rem !important;
+}
+
+
+.tabs-contents {
+    @include breakpoint("medium") {
+        min-height: 62% !important;
+        max-height: 86% !important;
+        height: 22rem !important;
+    }   
+}
+.checkoutHeader-content {
+    padding: 1rem !important;
+    .checkoutHeader-heading {
+        width: 10%;
+    }
+}
+.promotion-click {
+    p {
+        font-size: 13px !important;
+    }
+}
+.page-heading {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+.css-1yqumcf {
+    width: 64% !important;
+}
+.sd-product-set__arrow--right, .sd-product-set__arrow--left {
+    background: none !important;
+    svg {
+       path{ fill: black !important;}
+    }
+}
+.css-13w78ue {
+    text-align: center !important;
+    // a {
+    //     padding: 1rem !important;
+    // }
+}
+.css-1yqumcf {
+    img {
+        width: 80% !important;
+        height: 80% !important;
+        top: 11px !important;
+        @include breakpoint("medium"){
+            top: 56px !important;
+        }
+    }
+}
+.css-1k0woj{
+    margin: 1rem 1rem !important;
+}
+.sd-simple-text-74c022b6-a512-4b69-b98f-a2ee92aa30d7 {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%) !important;
+    padding-top: 120px !important;
+    margin-top: 0px !important;
+}
+.sd-simple-text-724fe474-7ed0-4a06-892d-5b921ce7d1a4 {
+    background: linear-gradient(180deg, rgba(242,242,242,1) 0%, rgba(255,255,255,1) 69%) !important; 
+    padding-bottom: 120px !important;
+    margin-bottom: 0px !important;
+}
+#sd-simple-text-editable-852f8a2d-a573-439d-a38d-b4b3739be038, #sd-simple-text-editable-91b44d74-69d6-45fb-873c-65df72861b4b, #sd-simple-text-editable-7e669670-e29a-4186-b49e-3e88436299bb, #sd-simple-text-editable-56612c49-d3d0-4850-9126-54e848104beb {
+    font-family: 'GT Pressura Bold' !important;
+    font-size: 28px !important;
+}
+.categoryImageOverlay {}
+// WAKE UP TO GOOD HEALT
+.go904542066 {
+
+}
+// LATVIA
+.go3486261541:after {
+    background-image: url("https://images.ctfassets.net/mucdmvfhn5wx/3HnjTyaMFm1368Zv4Tz5jE/4384239e2f7fa02541be05f88c2c3922/mobileHomePageImage.jpg") !important;
+    @include breakpoint("medium") {
+        background-image: url("https://cdn11.bigcommerce.com/s-z271nuj0jn/product_images/uploaded_images/slogan-iamge.jpg") !important;
+    } 
+    
+}
+.go2420883899 {
+    color: rgba(2,4,3,1) !important;
+    @include breakpoint("medium") {
+        color: white !important;
+    }
+}
+.card-title { 
+    a {
+        font-family: 'GT Pressura Regular' !important;
+        letter-spacing: 0.6px !important;
+    }
+}
+.actionBar-section {
+    font-family: 'GT Pressura Regular' !important;
+    letter-spacing: 0.9px !important;
+}
+.heroCarousel-image-wrapper {
+    // img {
+    //     content: url("https://images.ctfassets.net/mucdmvfhn5wx/3HnjTyaMFm1368Zv4Tz5jE/4384239e2f7fa02541be05f88c2c3922/mobileHomePageImage.jpg") !important;
+    // }
+    img{
+        height: 84% !important;
+    }
+    @include breakpoint("medium") {
+        
+        img {
+            height: 100% !important;
+            content: url("https://cdn11.bigcommerce.com/s-z271nuj0jn/images/stencil/1920w/carousel/41/heroGinger.jpg?c=1") !important;
+        }
+    } 
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    // font-family: "Gt Pressure" !important;
+}
+.absolute {
+    position: absolute !important;
+}
+
+.relative {
+    position: relative;
+}
+.left-auto {
+    left: auto;
+}
+.top-0 {
+    top: 0;
+}
+.top-1 {
+    top: 1rem;
+}
+.top-8 {
+    top: 8rem;
+};
+
+
+.left-0 {
+    left: 0;
+}
+
+.top-2 {
+    top: 2rem;
+}
+
+.left-2 {
+    left: 2rem;
+}
+
+.right-2 {
+    right: 2rem;
+}
+
+.z-100 {
+    z-index: 100;
+}
+
+.p-0 {
+    padding: 0;
+}
+.mr-8 {
+    margin-right: 2rem;
+}
+.mr-8 {
+    margin-right: 2rem;
+}
+
+// margin
+.mt-1 {
+    margin-top: 1rem;
+}
+.mt-2 {
+    margin-top: 2rem;
+}
+.mt-3 {
+    margin-top: 3rem;
+}
+.mt-4 {
+    margin-top: 4rem;
+}
+.mt-5 {
+    margin-top: 5rem;
+}
+.mt-6 {
+    margin-top: 6rem;
+}
+.mt-7 {
+    margin-top: 7rem;
+}
+.mt-8 {
+    margin-top: 8rem;
+}
+.mt-9 {
+    margin-top: 9rem;
+}
+.mt-10 {
+    margin-top: 10rem;
+}
+.mt-11 {
+    margin-top: 11rem;
+}
+.mt-12 {
+    margin-top: 12rem;
+}

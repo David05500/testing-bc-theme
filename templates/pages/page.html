@@ -1,6 +1,6 @@
 {{#partial "page"}}
 
-{{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
+<!-- {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}} -->
 
 <main class="page">
     {{#unless theme_settings.hide_page_heading }}
@@ -37,6 +37,8 @@
             {{/each}}
         </ul>
     {{/if}}
+    {{{region name="page_builder_content"}}}
+
 </main>
 
 {{/partial}}

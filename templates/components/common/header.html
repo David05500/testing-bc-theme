@@ -11,22 +11,24 @@
 </div>
 {{/if}}
 <header class="header" role="banner">
-    <a href="#" class="mobileMenu-toggle" data-mobile-menu-toggle="menu">
-        <span class="mobileMenu-toggleIcon">Toggle menu</span>
-    </a>
-    {{> components/common/navigation}}
+    <div class="container header-inner">
+        <a href="#" class="mobileMenu-toggle" data-mobile-menu-toggle="menu">
+            <span class="mobileMenu-toggleIcon">Toggle menu</span>
+        </a>
+    
+        {{#if page_type '===' 'default'}}
+        {{> components/common/store-logo}}
 
-    {{#if page_type '===' 'default'}}
-        <h1 class="header-logo header-logo--{{theme_settings.logo-position}}">
-            {{> components/common/store-logo}}
-        </h1>
-    {{else}}
-        <div class="header-logo header-logo--{{theme_settings.logo-position}}">
-            {{> components/common/store-logo}}
+        {{else}}
+        {{> components/common/store-logo}}
+        {{/if}}
+    
+        <div class="nav-wrapper">
+            <div class="navPages-container" id="menu" data-menu>
+                {{> components/common/navigation-menu}}
+            </div>
+            {{> components/common/navigation}}
         </div>
-    {{/if}}
-    <div class="navPages-container" id="menu" data-menu>
-        {{> components/common/navigation-menu}}
     </div>
 </header>
 {{{region name="header_bottom--global"}}}

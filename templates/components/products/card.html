@@ -1,4 +1,4 @@
-<article class="card {{#if alternate}}card--alternate{{/if}}" {{#if settings.data_tag_enabled}} data-event-type="{{event}}" data-entity-id="{{id}}" data-position="{{position}}" data-name="{{name}}" data-product-category="{{#each category}}{{#if @last}}{{this}}{{else}}{{this}}, {{/if}}{{/each}}" data-product-brand="{{brand.name}}" data-product-price="{{#if price.with_tax}}{{price.with_tax.value}}{{else}}{{price.without_tax.value}}{{/if}}"  {{/if}}>
+<article class="card {{#if alternate}}card--alternate{{/if}}" {{#if settings.data_tag_enabled}} data-event-type="{{event}}" data-entity-id="{{id}}" data-position="{{position}}" data-name="{{name}}" data-product="{{product}}" data-product-category="{{#each category}}{{#if @last}}{{this}}{{else}}{{this}}, {{/if}}{{/each}}" data-product-brand="{{brand.name}}" data-product-price="{{#if price.with_tax}}{{price.with_tax.value}}{{else}}{{price.without_tax.value}}{{/if}}"  {{/if}}>
     <figure class="card-figure">
         {{#or price.sale_price_with_tax.value price.sale_price_without_tax.value}}
             {{#if theme_settings.product_sale_badges '===' 'sash'}}
@@ -43,11 +43,11 @@
                         {{/if}}
                     {{/if}}
                 {{/unless}}
-                {{#if show_compare}}
+                <!-- {{#if show_compare}}
                     <label class="button button--small card-figcaption-button" for="compare-{{id}}">
                         {{lang 'products.compare'}} <input type="checkbox" name="products[]" value="{{id}}" id="compare-{{id}}" data-compare-id="{{id}}">
                     </label>
-                {{/if}}
+                {{/if}} -->
                 {{#or customer (if theme_settings.restrict_to_login '!==' true)}}
                     {{#if show_cart_action}}
                         {{#if has_options}}
@@ -57,6 +57,7 @@
                             <a href="{{pre_order_add_to_cart_url}}" data-event-type="product-click" class="button button--small card-figcaption-button">{{lang 'products.pre_order'}}</a>
                         {{/if}}
                         {{#if add_to_cart_url }}
+
                             <a href="{{add_to_cart_url}}" data-event-type="product-click" data-button-type="add-cart" class="button button--small card-figcaption-button">{{lang 'products.add_to_cart'}}</a>
                             <span class="product-status-message aria-description--hidden">{{lang 'category.add_cart_announcement'}}</span>
                         {{/if}}
@@ -69,13 +70,13 @@
         </figcaption>
     </figure>
     <div class="card-body">
-        {{#and rating show_rating}}
+        <!-- {{#and rating show_rating}}
             <p class="card-text" data-test-info-type="productRating">
                 <span class="rating--small">
                     {{> components/products/ratings rating=rating}}
                 </span>
             </p>
-        {{/and}}
+        {{/and}} -->
         {{#if brand.name}}
             <p class="card-text" data-test-info-type="brandName">{{brand.name}}</p>
         {{/if}}

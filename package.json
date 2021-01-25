@@ -1,9 +1,9 @@
 {
-  "name": "bigcommerce-cornerstone",
+  "name": "bigcommerce-ktb",
   "description": "The BigCommerce reference theme for the Stencil platform",
   "version": "4.12.1",
   "private": true,
-  "author": "BigCommerce",
+  "author": "David Sarvasidze",
   "license": "MIT",
   "dependencies": {
     "@bigcommerce/stencil-utils": "^6.6.0",

@@ -26,6 +26,7 @@ ol.breadcrumbs {
     display: inline-block;
     float: none;
     margin-right: 0.25rem;
+    font-size: 16px;
 
     &.is-active {
 
@@ -33,6 +34,7 @@ ol.breadcrumbs {
         > .breadcrumb-label {
             cursor: pointer;
             font-weight: 700;
+            text-decoration: none;
         }
     }
 
@@ -41,7 +43,7 @@ ol.breadcrumbs {
         display: inline-block;
         margin: 0 0.25rem;
         transform: rotate(15deg);
-        border-right: 0.1em solid $primary-color;
+        border-right: 0.1em solid #626064;
         height: 0.8em;
         content: '';
     }

@@ -9,3 +9,38 @@
 .category-header-image {
     width: 100%;
 }
+
+
+.products-sort {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    @include breakpoint("medium") {
+        padding-right: 3rem;
+        justify-content: flex-end;
+
+    }
+
+}
+.categoryImage {
+    height: 80vh !important;
+    width: 100% !important;
+    background: url('../img/shopBGMobile.jpg') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    @include breakpoint("medium") {
+        background: url('../img/shopBG.jpg') !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .categoryImageOverlay{
+        height: 100%;
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.7035189075630253) 14%, rgba(255,255,255,0.5354516806722689) 33%, rgba(255,255,255,0) 54%, rgba(255,255,255,0) 100%);
+    }
+
+}
+.margin-0 {
+    margin: 0;
+}

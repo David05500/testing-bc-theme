@@ -58,7 +58,7 @@
     &.is-open {
         display: block;
         padding-top: $header-height;
-        z-index: 0;
+        z-index: 45;
     }
 }
 
@@ -67,7 +67,8 @@
 // -----------------------------------------------------------------------------
 
 .navPages {
-    background-color: $navPages-backgroundColor;
+    background-color: white;
+    // background-color: #f2f2f2;
     height: 100%;
     overflow-y: auto;
     padding: spacing("single");
@@ -155,7 +156,7 @@
 
     .navPages-action-moreIcon {
         border: solid 1px $navPages-action-moreIcon-borderColor;
-        border-radius: 4px;
+        // border-radius: 4px;
         float: left;
         height: 35px;
         margin-top: -10px;
@@ -204,7 +205,7 @@
 
     @include breakpoint("medium") {
         display: inline-block;
-        padding: spacing("half") (spacing("half") + spacing("quarter")) (spacing("half") + spacing("quarter"));
+        padding: (spacing("half") + spacing("quarter")) (spacing("half") + spacing("quarter")) (spacing("half") + spacing("quarter"));
 
         &.is-open {
             background-color: stencilColor("navPages-subMenu-backgroundColor");

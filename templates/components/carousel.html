@@ -33,17 +33,19 @@
                 }}
             {{/if}}
             </div>
-            {{#if heading}}
-                {{> components/carousel-content show_background=true}}
-            {{else}}
-                {{#if text}}
-                    {{> components/carousel-content show_background=true}}
+            <div class="carouselText">
+                {{#if heading}}
+                    {{> components/carousel-content }}
                 {{else}}
-                    {{#if button_text}}
-                        {{> components/carousel-content show_background=false}}
+                    {{#if text}}
+                        {{> components/carousel-content }}
+                    {{else}}
+                        {{#if button_text}}
+                            {{> components/carousel-content show_background=false}}
+                        {{/if}}
                     {{/if}}
                 {{/if}}
-            {{/if}}
+            </div>
         </div>
     </a>
     {{/each}}

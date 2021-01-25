@@ -62,6 +62,12 @@
     </ul>
 </div>
 {{else}}
+<a class="navPages-action{{#if is_active}} activePage{{/if}} onlyMobile"
+   href="/"
+   aria-label="home"
+>
+    Home
+</a>
 <a class="navPages-action{{#if is_active}} activePage{{/if}}"
    href="{{url}}"
    aria-label="{{name}}"

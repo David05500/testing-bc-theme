@@ -20,12 +20,11 @@
     @include nav($style: "navBar", $wrapper: "nav");
     @include verticalPositionMiddle("absolute");
     right: 0;
-    top: 26px; // 2
-    width: 100%; // 4
+    top: 33px; // 2
     z-index: zIndex("lowest"); // 5.
 
     @include breakpoint("medium") {
-        padding: 0 spacing("single");
+        // padding: 0 spacing("single");
         position: relative;
         right: auto;
         top: auto;
@@ -48,7 +47,7 @@
                     $triangle-color: stencilColor("navUser-dropdown-borderColor")
                 );
                 bottom: 100%;
-                left: spacing("half");
+                right: spacing("half");
                 position: absolute;
             }
 
@@ -59,7 +58,7 @@
                     $triangle-color: stencilColor("navUser-dropdown-backgroundColor")
                 );
                 bottom: 100%;
-                left: spacing("half") + remCalc(2px);
+                right: spacing("half") + remCalc(2px);
                 position: absolute;
             }
         }
@@ -67,6 +66,7 @@
 }
 
 .navUser-section {
+    display: flex;
     @include breakpoint("medium") {
         position: relative; // 7
     }
@@ -85,7 +85,7 @@
 
         // scss-lint:disable NestingDepth
         svg {
-            fill: stencilColor("navUser-color-hover");
+            fill: none  ;
             stroke: stencilColor("navUser-color-hover");
         }
         // scss-lint:enable NestingDepth
@@ -97,7 +97,7 @@
     }
 
     svg {
-        fill: stencilColor("navUser-color");
+        fill: none;
         stroke: stencilColor("navUser-color");
         transition: all 0.15s ease;
     }
@@ -282,12 +282,12 @@
 }
 
 .dropdown--quickSearch {
-    background-color: $dropdown--quickSearch-backgroundColor;
+    background-color: #f2f2f2;
     padding: spacing("single") 0;
     display: none;
 
     @include breakpoint("small") {
-        padding: spacing("double");
+        // padding: spacing("double");
     }
 
     &.is-open {
@@ -333,7 +333,7 @@
 
 .countPill {
     background-color: stencilColor("navUser-indicator-backgroundColor");
-    border-radius: 50%;
+    // border-radius: 50%;
     color: color("whites", "bright");
     display: none;
     font-size: fontSize("tiny");

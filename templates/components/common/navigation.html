@@ -42,7 +42,7 @@
                aria-controls="quickSearch"
                aria-label="{{lang 'common.search'}}"
             >
-                {{lang 'common.search'}}
+                <svg class='nav-icon nav-iconSearch'><use xlink:href="#icon-searchLogo" /></svg>
             </button>
         </li>
         {{#if settings.gift_certificates_enabled}}
@@ -55,7 +55,7 @@
                 </a>
             </li>
         {{/if}}
-        <li class="navUser-item navUser-item--account">
+        <!-- <li class="navUser-item navUser-item--account">
             {{#if customer}}
                 <a class="navUser-action"
                    href="{{urls.account.index}}"
@@ -86,16 +86,17 @@
                     </a>
                 {{/if}}
             {{/if}}
-        </li>
-        <li class="navUser-item navUser-item--cart">
-            <a class="navUser-action"
+        </li> -->
+        <li class="">
+            <a class="navUser-action navUser-action--Cart"
                data-cart-preview
                data-dropdown="cart-preview-dropdown"
                data-options="align:right"
                href="{{urls.cart}}"
                aria-label="{{lang 'cart.nav_aria_label'}}"
             >
-                <span class="navUser-item-cartLabel">{{lang 'common.cart'}}</span>
+                <!-- <span class="navUser-item-cartLabel">{{lang 'common.cart'}}</span> -->
+                <svg class='nav-icon nav-iconCart'><use xlink:href="#icon-cartLogo" /></svg>
                 <span class="countPill cart-quantity"></span>
             </a>
 

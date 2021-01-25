@@ -79,6 +79,7 @@
     text-align: center;
     text-decoration: none;
     z-index: zIndex("high");
+    margin-right: 1rem;
 
     @include breakpoint("medium") {
         font-size: 32px;
@@ -94,7 +95,8 @@
 .modal-body {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    padding: $reveal-modal-padding;
+    padding: 0;
+    // padding: $reveal-modal-padding;
 }
 
 .modal--alert {

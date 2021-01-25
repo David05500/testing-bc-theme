@@ -15,14 +15,15 @@
 // -----------------------------------------------------------------------------
 
 .productView-images {
-    margin-bottom: spacing("double");
+    // margin-bottom: spacing("double");
 }
 
 .productView-image {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: auto;
+    // margin: auto;
+    padding-top: 12rem;
     position: relative;
 
     @include breakpoint("medium") {
@@ -48,7 +49,7 @@
     img {
         @include lazy-loaded-img;
         max-height: 100%;
-        width: 100%;
+        width: 70%;
         object-fit: contain;
         /* Object-fit polyfill */
         font-family: 'object-fit: contain;';
@@ -128,7 +129,7 @@
     padding-bottom: spacing("single") + spacing("third");
 
     &.product-options {
-        overflow: hidden; // 1
+        // overflow: hidden; // 1
     }
 }
 
@@ -206,6 +207,14 @@
 .productView-ratingWrapper {
     display: inline-flex;
     line-height: 1;
+}
+.productView-rating {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+
 }
 
 .productView-reviewLink {
@@ -289,11 +298,16 @@
 
 .productView-options {
     @include clearfix;
-    margin-bottom: spacing("single");
+    // margin-bottom: spacing("single");
     text-align: center;
+    padding: 0 1rem;
 
     @include breakpoint("small") {
         text-align: left;
+    }
+
+    @include breakpoint("medium") {
+        padding: 0;
     }
 
     .form-input[type="number"] {
@@ -312,7 +326,6 @@
 
     .form-field {
         font-size: 0; // 2
-        margin-bottom: 2rem;
 
         // scss-lint:disable SelectorDepth, NestingDepth
         > .form-checkbox + .form-label
@@ -422,8 +435,8 @@
 .productView-image .easyzoom-flyout {
     overflow: hidden;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 75%;
+    height: 75%;
 
     img {
         max-width: none;

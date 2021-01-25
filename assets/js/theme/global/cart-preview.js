@@ -17,8 +17,8 @@ export default function (secureBaseUrl, cartId) {
 
     $body.on('cart-quantity-update', (event, quantity) => {
         $cart.attr('aria-label', (_, prevValue) => prevValue.replace(/\d+/, quantity));
-
-        if (!quantity) {
+        console.log(quantity);
+        if (quantity === 0) {
             $cart.addClass('navUser-item--cart__hidden-s');
         } else {
             $cart.removeClass('navUser-item--cart__hidden-s');
@@ -65,13 +65,13 @@ export default function (secureBaseUrl, cartId) {
     let quantity = 0;
 
     if (cartId) {
-        // Get existing quantity from localStorage if found
-        if (utils.tools.storage.localStorageAvailable()) {
-            if (localStorage.getItem('cart-quantity')) {
-                quantity = Number(localStorage.getItem('cart-quantity'));
-                $body.trigger('cart-quantity-update', quantity);
-            }
-        }
+        // // Get existing quantity from localStorage if found
+        // if (utils.tools.storage.localStorageAvailable()) {
+        //     if (localStorage.getItem('cart-quantity')) {
+        //         quantity = Number(localStorage.getItem('cart-quantity'));
+        //         $body.trigger('cart-quantity-update', quantity);
+        //     }
+        // }
 
         // Get updated cart quantity from the Cart API
         const cartQtyPromise = new Promise((resolve, reject) => {
