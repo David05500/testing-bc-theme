@@ -322,7 +322,10 @@
         margin-top: 2rem;
     }
 }
-
+.quickview {
+    text-transform: uppercase;
+    width: 100%;
+}
 .css-184epwz, .go3135553855 {
     font-family: 'GT Pressura Bold' !important;
     text-transform: uppercase;
@@ -421,18 +424,65 @@
     // overflow-x: hidden;
     // height: 17rem;
 }
-
-.tab-content { 
-    padding: 1.5rem 2rem;     
-    height: auto !important;
-    overflow-y: unset !important;
-    ul {
-        padding-left: 2rem;
-    }    
+.productView-description {
+    .tab-content { 
+        padding: 1.5rem 2rem;     
+        height: auto !important;
+        overflow-y: unset !important;
+        ul {
+            padding-left: 2rem;
+        }    
+        @include breakpoint("medium") {
+            height: 23rem !important;
+            overflow-y: scroll !important;
+        }   
+    }
+}
+.productView-reviewLink--new {
+    font-size: 14px;
+    color: black;
+    font-weight: 100;
+    font-family: 'GT Pressura Regular';
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
     @include breakpoint("medium") {
-        height: 23rem !important;
-        overflow-y: scroll !important;
-    }   
+        margin-bottom: 0 !important;
+    }
+}
+.form-wishlist {
+    margin-bottom: 0 !important;
+    width: 100%;
+    @include breakpoint("medium") {
+        margin-top: 0 !important;
+    }
+}
+.wishAndReviewSection {
+    flex-direction: column;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint("medium") {
+        flex-direction: row;
+        width: unset;
+    }
+}
+#form-action-addToCart {
+    @include breakpoint("medium") {
+        margin-bottom: 0;
+    }
+}
+.productView-options {
+    .form-field--increments {
+        @include breakpoint("medium") {
+            margin-bottom: 1rem;
+        }
+    }
+}
+.dropdown-menu-button {
+    @include breakpoint("medium") {
+        margin-bottom: 0;
+    }
 }
 .tab-title {
     font-weight: 100 !important;
@@ -485,7 +535,19 @@
     margin-bottom: 1rem !important;
 }
 
-
+.modal {
+    overflow-y: scroll !important;
+    padding: 1rem !important;
+    
+    .modal-body {
+        margin-top: 2rem;
+    }
+    .product-title {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+}
 .tabs-contents {
     @include breakpoint("medium") {
         min-height: 62% !important;

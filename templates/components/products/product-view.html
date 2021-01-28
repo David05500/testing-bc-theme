@@ -105,9 +105,21 @@
                                 {{/if}}
                             {{/if}}
                         </form>
-                        {{#if settings.show_wishlist}}
-                            {{> components/common/wishlist-dropdown}}
-                        {{/if}}
+                        <div class="wishAndReviewSection">
+                            {{#if settings.show_wishlist}}
+                                {{> components/common/wishlist-dropdown}}
+                            {{/if}}
+                            {{#if settings.show_product_reviews}}
+                                <a href="{{product.url}}{{#if is_ajax}}#write_review{{/if}}"
+                                class="productView-reviewLink productView-reviewLink--new"
+                                {{#unless is_ajax}}data-reveal-id="modal-review-form"{{/unless}}
+                                role="button"
+                                >
+                                {{lang 'products.reviews.new'}}
+                                </a>
+                                {{> components/products/modals/writeReview}}
+                            {{/if}}
+                        </div>
                     </div>
                     {{#unless is_ajax}}
                         <!-- {{> components/common/share}} -->
